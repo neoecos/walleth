@@ -9,6 +9,8 @@ import com.github.salomonbrys.kodein.LazyKodein
 import com.github.salomonbrys.kodein.android.appKodein
 import com.github.salomonbrys.kodein.instance
 import kotlinx.android.synthetic.main.activity_account_create.*
+import org.kethereum.functions.ERC67
+import org.kethereum.functions.isERC67String
 import org.kethereum.functions.isValid
 import org.kethereum.model.Address
 import org.ligi.kaxtui.alert
@@ -20,8 +22,6 @@ import org.walleth.data.addressbook.AddressBookEntry
 import org.walleth.data.keystore.WallethKeyStore
 import org.walleth.iac.BarCodeIntentIntegrator
 import org.walleth.iac.BarCodeIntentIntegrator.QR_CODE_TYPES
-import org.walleth.iac.ERC67
-import org.walleth.iac.isERC67String
 
 private val HEX_INTENT_EXTRA_KEY = "HEX"
 fun Context.startCreateAccountActivity(hex: String) {

@@ -9,6 +9,7 @@ import com.github.salomonbrys.kodein.LazyKodein
 import com.github.salomonbrys.kodein.android.appKodein
 import com.github.salomonbrys.kodein.instance
 import kotlinx.android.synthetic.main.activity_create_transaction.*
+import org.kethereum.functions.ERC67
 import org.kethereum.functions.createTokenTransferTransactionInput
 import org.kethereum.model.Address
 import org.kethereum.model.Transaction
@@ -32,7 +33,6 @@ import org.walleth.functions.decimalsInZeroes
 import org.walleth.functions.resolveNameFromAddressBook
 import org.walleth.iac.BarCodeIntentIntegrator
 import org.walleth.iac.BarCodeIntentIntegrator.QR_CODE_TYPES
-import org.walleth.iac.ERC67
 import java.math.BigDecimal
 import java.math.BigInteger
 import java.math.BigInteger.ZERO
